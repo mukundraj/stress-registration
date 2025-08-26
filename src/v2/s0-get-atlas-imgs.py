@@ -57,12 +57,12 @@ sagittal_ids = atlas_image_dataframe['id'].tolist()
 print(len(sagittal_ids))
 
 os.makedirs(output_dir, exist_ok=True)
-downsample = 2  # 0 = full resolution
+downsample = 3  # 0 = full resolution
 
 
 # download nissl images
 for img_id in sagittal_ids:
-    file_path = Path(output_dir) / f'{img_id}_nissl.png'
+    file_path = Path(output_dir) / f'nissls/{img_id}_nissl.png'
     image_api.download_atlas_image(img_id, file_path, annotation=False, downsample=downsample)
 
 

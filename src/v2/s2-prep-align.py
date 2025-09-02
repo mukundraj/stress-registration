@@ -1,4 +1,4 @@
-"""Prepare images for slicer
+"""Prepare images for alignment pipeline
 
 Usage:
 
@@ -11,7 +11,7 @@ python script.py
 
 Example:
 
-python src/v2/s2-prep-slicer.py \
+python src/v2/s2-prep-align.py \
     ~/Desktop/work/data/stress-atlas \
     /v2/s1b-histolozee/exports \
     /v2/s0-atlas-nissls/nissls \
@@ -64,7 +64,7 @@ def process_images(input_folder, output_folder, folder_type):
     for img_path in image_files:
         filename = os.path.basename(img_path)
         name_without_ext = os.path.splitext(filename)[0]
-        output_path = os.path.join(output_folder, f"{name_without_ext}.tif")
+        output_path = os.path.join(output_folder, f"{name_without_ext}.png")
         
         print(f"Processing: {filename}")
         
@@ -81,13 +81,13 @@ def process_images(input_folder, output_folder, folder_type):
             has_alpha = False
         
         # Build vips command to convert image
-        # Remove alpha channel if present and ensure non-pyramidal TIFF
+        # Remove alpha channel if present and convert to PNG format
         if has_alpha:
             # Extract RGB channels (remove alpha) - extract first 3 bands
             cmd = f'vips extract_band {img_path} {output_path} 0 --n 3'
         else:
-            # Just convert to TIFF format (non-pyramidal)
-            cmd = f'vips tiffsave {img_path} {output_path} --compression deflate'
+            # Convert to PNG format
+            cmd = f'vips pngsave {img_path} {output_path}'
         
         print(f"  Command: {cmd}")
         result = os.system(cmd)

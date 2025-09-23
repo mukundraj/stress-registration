@@ -12,9 +12,9 @@ Example:
 
 python src/v2/s1-prep-histolozee.py \
     ~/Desktop/work/data/stress-atlas \
-    /v2/s0-ippaths/ippaths.txt \
+    /v2/s0-ippaths/ippaths-SA-3.txt \
     /v2/s1a-tmp \
-    /v2/s1b-histolozee \
+    /v2/s1b-histolozee-SA-3 \
 
 Supplementary:
 

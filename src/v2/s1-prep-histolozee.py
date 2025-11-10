@@ -14,7 +14,49 @@ python src/v2/s1-prep-histolozee.py \
     ~/Desktop/work/data/stress-atlas \
     /v2/s0-ippaths/ippaths-SA-3.txt \
     /v2/s1a-tmp \
-    /v2/s1b-histolozee-SA-3 \
+    /v2/s1b/s1b-histolozee-SA-3 \
+
+python src/v2/s1-prep-histolozee.py \
+    ~/Desktop/work/data/stress-atlas \
+    /v2/s0-ippaths/ippaths-SA-9.txt \
+    /v2/s1a-tmp \
+    /v2/s1b/s1b-histolozee-SA-9 \
+
+python src/v2/s1-prep-histolozee.py \
+    ~/Desktop/work/data/stress-atlas \
+    /v2/s0-ippaths/ippaths-SA-13.txt \
+    /v2/s1a-tmp \
+    /v2/s1b/s1b-histolozee-SA-13 \
+
+python src/v2/s1-prep-histolozee.py \
+    ~/Desktop/work/data/stress-atlas \
+    /v2/s0-ippaths/ippaths-SA-14.txt \
+    /v2/s1a-tmp \
+    /v2/s1b/s1b-histolozee-SA-14 \
+
+python src/v2/s1-prep-histolozee.py \
+    ~/Desktop/work/data/stress-atlas \
+    /v2/s0-ippaths/ippaths-SA-16.txt \
+    /v2/s1a-tmp \
+    /v2/s1b/s1b-histolozee-SA-16 \
+
+python src/v2/s1-prep-histolozee.py \
+    ~/Desktop/work/data/stress-atlas \
+    /v2/s0-ippaths/ippaths-SA-22.txt \
+    /v2/s1a-tmp \
+    /v2/s1b/s1b-histolozee-SA-22 \
+
+python src/v2/s1-prep-histolozee.py \
+    ~/Desktop/work/data/stress-atlas \
+    /v2/s0-ippaths/ippaths-SA-23.txt \
+    /v2/s1a-tmp \
+    /v2/s1b/s1b-histolozee-SA-23 \
+
+python src/v2/s1-prep-histolozee.py \
+    ~/Desktop/work/data/stress-atlas \
+    /v2/s0-ippaths/ippaths-SA-24.txt \
+    /v2/s1a-tmp \
+    /v2/s1b/s1b-histolozee-SA-24 \
 
 Supplementary:
 

@@ -11,12 +11,12 @@ python script.py
 
 Example:
 
-python src/v2/s2-prep-align.py \
+python src/v2/s3-prep-align.py \
     ~/Desktop/work/data/stress-atlas \
-    /v2/s1b-histolozee/exports \
+    /v2/s2-histolozee-exports/s1b-histolozee-SA-9/exports \
     /v2/s0-atlas-nissls/nissls \
-    /v2/s2-slicer/atlas \
-    /v2/s2-slicer/histolozee
+    /v2/s3-slicer/s1b-histolozee-SA-9/atlas \
+    /v2/s3-slicer/s1b-histolozee-SA-9/histolozee
 
 Supplementary:
 
